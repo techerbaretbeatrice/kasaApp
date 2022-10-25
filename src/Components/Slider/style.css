@@ -1,0 +1,40 @@
+.slider-container {
+    width: 86%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.image-container {
+    width: 100%;
+    max-width: 1240px;
+    height: 415px;
+    border-radius: 25px;
+    position: relative;
+    overflow: hidden;
+}
+
+.angle-left {
+    Width: 46.68px;
+    Height: 79.2px;
+    position: absolute;
+    top: 156.7px;
+    left: 23.36px;
+}
+
+.angle-right {
+    Width: 46.68px;
+    Height: 79.2px;
+    position: absolute;
+    top: 156.7px;
+    right: 23.36px;
+}
+
+.image-slide {
+    width: 100%;
+    max-width: 1240px;
+    height: 415px;
+    border-radius: 10px;
+    object-fit: fill;
+}

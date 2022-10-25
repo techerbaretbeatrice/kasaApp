@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+.errorPage-style {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.message-box {
+    width: 86.11%;
+    height: auto;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 318px;
+    margin-top: 61px;
+
+}
+
+.error {
+    font-size: 288px;
+    color: #FF6060;
+
+}
+
+.message {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    color: #FF6060;
+    margin-bottom: 182px;
+}
+
+a {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #FF6060;
+}

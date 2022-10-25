@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.gallery-style {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    width: 86.11%;
+
+}
+
+.gallery-box {
+    max-width: 1240px;
+    height: auto;
+    background-color: #F6F6F6;
+    border-radius: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 56px;
+
+}

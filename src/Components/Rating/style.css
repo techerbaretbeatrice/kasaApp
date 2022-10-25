@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.rating-style {
+    display: flex;
+    justify-content: right;
+    margin-top: 25px;
+}
+
+.star {
+    width: 30px;
+    height: 30px;
+
+
+}

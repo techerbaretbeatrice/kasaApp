@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.thumb-style {
+    width: 340px;
+    height: 340px;
+    border-radius: 10px;
+
+
+    display: flex;
+    justify-content: left;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #FFF;
+    overflow: hidden;
+    position: relative;
+
+    margin-bottom: 50px;
+
+}
+
+.title-box {
+    width: 60%;
+    height: 52px;
+    position: absolute;
+    Top: 268px;
+    Left: 20px;
+    display: flex;
+    justify-content: left;
+    text-align: left;
+
+}
+
+.thumb-img {
+    background: linear-gradient(#FFFFFF 0% #000000 50%);
+}

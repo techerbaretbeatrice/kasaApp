@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.host-infos {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    text-align: center;
+}
+
+.host-name {
+    display: block;
+    width: 93px;
+    height: 52px;
+    font-family: 'Monserrat', sans-serif;
+    font-size: 18px;
+    color: #FF6060;
+    font-weight: 500;
+}
+
+.img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50px;
+    overflow: hidden;
+    object-fit: contain;
+}
+
+.host-picture {
+    height: 100%;
+}

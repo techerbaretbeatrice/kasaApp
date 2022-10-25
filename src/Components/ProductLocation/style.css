@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.location {
+    font-family: 'Monserrat', sans-serif;
+    font-size: 18px;
+    color: #FF6060;
+    font-weight: 500;
+    margin-top: 0px;
+    margin-bottom: 23px;
+}
