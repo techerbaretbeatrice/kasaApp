@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 .gallery-style {
-    display: flex;
-    justify-content: center;
+
     margin-bottom: 50px;
     width: 86.11%;
+    max-width: 1240px;
+    display: flex;
+    justify-content: center;
 
 }
 
@@ -15,7 +17,38 @@
     border-radius: 25px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    padding-top: 56px;
+    padding: 4.5% 4% 4% 4%;
+    column-gap: 5.2%;
+    row-gap: 50px;
+    justify-content: left;
+
+}
+
+@media all and (min-width: 980px) and (max-width: 1439px) {
+    .gallery-box {
+        justify-content: center;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 980px) {
+    .gallery-box {
+        justify-content: center;
+    }
+
+}
+
+@media only screen and (max-device-width : 768px) {
+
+    .gallery-style {
+        width: 90%;
+    }
+
+    .gallery-box {
+        width: 100%;
+        background-color: transparent;
+        padding: 0;
+        row-gap: 20px;
+    }
+
 
 }

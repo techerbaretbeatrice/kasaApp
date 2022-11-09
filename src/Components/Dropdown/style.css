@@ -2,7 +2,7 @@
 
 .dropdown-style {
     background-color: #FF6060;
-    width: 582px;
+    width: 100%;
     height: 52px;
     border-radius: 10px;
     display: flex;
@@ -14,11 +14,14 @@
     align-items: center;
     position: relative;
     margin-top: 31px;
+
+
 }
 
 .dropdown-title {
     color: #FFF;
     margin-left: 20px;
+    font-size: 18px;
 }
 
 
@@ -31,17 +34,22 @@
 }
 
 .dropdown-style.long {
-    width: 71%;
+    width: 82.74%;
     max-width: 1026px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+
 }
 
 
 
 
 .dropdown-content {
-    width: 71%;
+    width: 82.74%;
     max-width: 1026px;
-    min-height: 100px;
+    min-height: 146px;
     background-color: #F7F7F7;
     border-radius: 10px;
     position: relative;
@@ -51,11 +59,28 @@
     color: #FF6060;
     font-size: 18px;
     text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 142.6%;
 }
 
 .dropdown-content.small {
     width: 100%;
     max-width: 582px;
+    min-height: 200px;
+    height: auto;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 40px;
+
+}
+
+.dropdown-content.small ul {
+    margin: 0px;
+    padding-left: 20px;
 }
 
 
@@ -63,14 +88,55 @@
     transform: rotate(180deg);
 }
 
-.dropdown-left {
-    width: 100%;
+@media only screen and (max-device-width : 768px) {
 
-    display: flex;
-    flex-direction: column;
-}
+    .dropdown-style.long {
+        width: 100%;
+        height: 30px;
+        border-radius: 5px;
+        font-size: 13px;
+        margin-top: 20px;
+    }
 
-.dropdown.right {
-    width: 100%;
+    .angledown-style {
+        width: 8.98px;
+        height: 15.2px;
+        position: absolute;
+        top: 25%;
+        right: 11px;
+    }
+
+    .dropdown-content {
+        width: 100%;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 17.11px;
+        padding-top: 20px;
+    }
+
+    .dropdown-style {
+        height: 29.93px;
+        width: 90%;
+    }
+
+    .dropdown-style.small {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 0px;
+    }
+
+    .dropdown-content.small {
+        width: 100%;
+        max-width: 100%;
+        font-size: 12px;
+        margin-top: -20px;
+        min-height: 143.32px;
+    }
+
+    .dropdown-title {
+        font-size: 13px;
+    }
+
+
 
 }

@@ -3,5 +3,33 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
+    height: auto;
 
+}
+
+.dropdown-box {
+    width: 86.11%;
+    max-width: 1240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 201px;
+    margin-top: -31px;
+}
+
+.description {
+    margin: 0px 18px 19px 18px;
+
+}
+
+@media only screen and (max-device-width : 768px) {
+    .dropdown-box {
+        width: 90%;
+        margin-bottom: 168px;
+        margin-top: -16px;
+    }
+
+    .description {
+        margin: 0px 10px auto 10px
+    }
 }

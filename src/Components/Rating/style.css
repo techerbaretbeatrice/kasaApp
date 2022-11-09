@@ -3,12 +3,24 @@
 .rating-style {
     display: flex;
     justify-content: right;
-    margin-top: 25px;
+    margin-top: 20px;
 }
 
 .star {
     width: 30px;
     height: 30px;
+}
 
 
+
+@media only screen and (max-device-width : 768px) {
+
+    .star-img {
+        width: 15px;
+        height: 15px;
+    }
+
+    .rating-style {
+        margin-top: 0px;
+    }
 }

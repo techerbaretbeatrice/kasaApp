@@ -24,3 +24,9 @@
 .copyright {
     color: #FFF;
 }
+
+@media only screen and (max-device-width : 768px) {
+    .copyright {
+        font-size: 12px;
+    }
+}

@@ -6,7 +6,7 @@ const Gallery = (props) => {
     return <div className="gallery-style">
         <div className="gallery-box">
             {
-                props.logements.map(logement => <Link to={`produits/${logement.id}`} key={logement.id}> <Thumb logement={logement} /></Link>)
+                props.logements.map(logement => <Link className="thumb-link" to={`produits/${logement.id}`} key={logement.id}> <Thumb logement={logement} /></Link>)
             }
 
         </div>

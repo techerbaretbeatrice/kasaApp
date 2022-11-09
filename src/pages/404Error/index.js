@@ -11,7 +11,7 @@ const ErrorPage = () => {
         <div className='message-box'>
             <span className='error'>404</span>
             <p className='message'>Oups! la page que vous demandez n'existe pas</p>
-            <Link to="/">Retouner sur la page d'acceuil</Link>
+            <Link to="/" className='link-home'>Retouner sur la page d'acceuil</Link>
 
 
         </div>

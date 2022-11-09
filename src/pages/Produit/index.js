@@ -8,17 +8,34 @@ import ProductLocation from "../../Components/ProductLocation"
 import Host from "../../Components/Host"
 import "./style.css"
 import Rating from "../../Components/Rating"
-import logements from "../../logements.json"
-import { useParams } from "react-router-dom"
+import { useNavigate, useParams } from "react-router-dom"
 import Dropdown from "../../Components/Dropdown"
-
+import { useEffect, useState } from "react"
 
 const ProductPage = () => {
     const params = useParams()
-    const id = params.id
-    console.log(params)
-    const accomodationDatas = logements.find(logement => logement.id === id)
-    console.log(accomodationDatas)
+    const navigate = useNavigate()
+
+    const [accomodationDatas, setAccomodationData] = useState(null)
+
+    useEffect(() => {
+        const promise = fetch("http://localhost:3000/logements.json")
+        promise.then((resultat) => {
+            return resultat.json()
+        }).then((jsonResult) => {
+            const id = params.id
+            const accomodation = jsonResult.find(logement => logement.id === id)
+            if (accomodation === undefined) {
+                navigate("/404")
+            } else {
+                setAccomodationData(accomodation)
+            }
+        })
+    }, [navigate, params.id])
+
+    if (accomodationDatas === null) {
+        return "en cours de chargement"
+    }
 
     return <div className="productPage-style">
         <Header />
@@ -37,10 +54,10 @@ const ProductPage = () => {
         </div>
         <div className="dropdown-container">
             <div className="dropdown-left">
-                <Dropdown size="small" label="Description">{accomodationDatas.description}</Dropdown>
+                <Dropdown size="small" label="Description"><div className="dropdown-description">{accomodationDatas.description}</div></Dropdown>
             </div>
-            <div className="dropdown-left">
-                <Dropdown size="small" label="Equipement">{accomodationDatas.equipments.map(equipment => equipment)}</Dropdown>
+            <div className="dropdown-right">
+                <Dropdown size="small" label="Equipement"><ul>{accomodationDatas.equipments.map((equipment, index) => <li className="style-type" key={`${equipment}-${index}`}>{equipment}</li>)}</ul></Dropdown>
             </div>
         </div>
         <Footer />

@@ -13,9 +13,26 @@
     font-size: 14px;
     font-weight: 500;
     margin-right: 10px;
+    line-height: 0.8;
 }
 
 .tag-container {
     display: flex;
     flex-direction: row;
+}
+
+@media only screen and (max-device-width : 768px) {
+
+    .tag-style {
+        width: 84px;
+        height: 18px;
+        font-size: 10px;
+        font-weight: 500;
+        line-height: 8px;
+        margin-top: 10px;
+    }
+
+    .tag-container {
+        flex-wrap: wrap;
+    }
 }

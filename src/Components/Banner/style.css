@@ -26,13 +26,59 @@
     filter: brightness(70%);
     height: 223px;
     width: 100%;
+    object-fit: cover;
 }
 
 .slogan {
     position: absolute;
-    top: 85px;
-    left: 215px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
     font-size: 48px;
     font-weight: 600;
+    Line-height: 68.45px;
     color: #fff;
+    height: 48px;
+}
+
+@media only screen and (max-device-width : 768px) {
+    .banner-style {
+        width: 100%;
+        margin-top: 0px;
+        margin-bottom: 22px;
+
+
+    }
+
+    .img-container {
+        width: 90%;
+    }
+
+    .border-style {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .small-height {
+        height: 111px;
+        object-fit: cover;
+    }
+
+    .border-style {
+        width: 100%;
+
+    }
+
+    .slogan {
+        font-size: 24px;
+        line-height: 25px;
+        text-align: left;
+        display: block;
+        width: 65%;
+        top: 0px;
+        left: -70px;
+        font-weight: 500;
+    }
 }

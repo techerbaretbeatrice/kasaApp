@@ -31,9 +31,37 @@
     margin-bottom: 182px;
 }
 
-a {
+.link-home {
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
     color: #FF6060;
+}
+
+@media only screen and (max-device-width : 768px) {
+    .message-box {
+        width: 90%;
+        margin-bottom: 265px;
+        margin-top: 162px;
+    }
+
+    .error {
+        font-weight: 700;
+        font-size: 96px;
+        line-height: 136.9px;
+        text-align: center;
+    }
+
+    .message {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 25.67px;
+        text-align: center;
+        margin-top: 11px;
+        margin-bottom: 133px;
+    }
+
+    .link-home {
+        font-size: 14px;
+    }
 }
