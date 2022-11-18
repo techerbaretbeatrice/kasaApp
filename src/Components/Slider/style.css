@@ -27,6 +27,7 @@
     position: absolute;
     top: 156.7px;
     left: 23.36px;
+    cursor: pointer;
 }
 
 .angle-right {
@@ -35,6 +36,7 @@
     position: absolute;
     top: 156.7px;
     right: 23.36px;
+    cursor: pointer;
 }
 
 .image-slide {
