@@ -61,7 +61,7 @@
 
     .thumb-link {
         width: 29%;
-        height: 32.27vh;
+        height: 280px;
     }
 
     .title-box {
@@ -78,7 +78,7 @@
 
     .thumb-link {
         width: 45%;
-        height: 32.27vh;
+        height: 280px;
     }
 
     .title-box {
@@ -98,7 +98,7 @@
     .thumb-link {
         width: 100%;
         max-width: 100%;
-        height: 28.5vh;
+        height: 255px;
 
     }
 
@@ -108,4 +108,10 @@
     }
 
 
+}
+
+@media only screen and (max-device-width : 374px) {
+    .title-box {
+        width: 85%;
+    }
 }

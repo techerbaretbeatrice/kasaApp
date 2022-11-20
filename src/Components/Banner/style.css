@@ -88,3 +88,12 @@
         font-weight: 500;
     }
 }
+
+@media only screen and (max-device-width : 374px) {
+    .slogan {
+        width: 68%;
+        left: 0;
+        text-align: center;
+        font-size: 21px;
+    }
+}
