@@ -43,6 +43,12 @@
     height: 48px;
 }
 
+@media only screen and (min-device-width: 768px) and (max-device-width: 980px) {
+    .slogan {
+        font-size: 38px;
+    }
+}
+
 @media only screen and (max-device-width : 768px) {
     .banner-style {
         width: 100%;

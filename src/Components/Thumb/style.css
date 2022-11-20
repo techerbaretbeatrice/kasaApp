@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 .thumb-style {
-    width: 340px;
-    height: 340px;
+    width: 100%;
+    height: 100%;
     border-radius: 10px;
     display: flex;
     justify-content: left;
@@ -15,8 +15,15 @@
 
 }
 
+.thumb-link {
+    width: 29.805%;
+    height: 47.755vh;
+    max-width: 340px;
+    max-height: 340px;
+}
+
 .title-box {
-    width: 60%;
+    width: 65%;
     height: 52px;
     position: absolute;
     Top: 268px;
@@ -46,15 +53,37 @@
 }
 
 
-
-
-@media all and (min-width: 768px) and (max-width: 980px) {
+@media only screen and (min-width: 980px) and (max-width: 1280px) {
     .thumb-style {
         width: 100%;
+        height: 280px;
     }
 
     .thumb-link {
+        width: 29%;
+        height: 32.27vh;
+    }
+
+    .title-box {
+        top: 205px;
+        width: 85%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+    .thumb-style {
         width: 100%;
+        height: 280px;
+    }
+
+    .thumb-link {
+        width: 45%;
+        height: 32.27vh;
+    }
+
+    .title-box {
+        top: 190px;
+        width: 70%;
     }
 }
 
@@ -63,12 +92,14 @@
     .thumb-style {
         width: 100%;
         height: 255px;
+        max-width: 100%;
     }
 
     .thumb-link {
-        flex-basis: auto;
-        flex-grow: 1;
-        height: 255px;
+        width: 100%;
+        max-width: 100%;
+        height: 28.5vh;
+
     }
 
     .title-box {
